@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/box_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/little_text_height"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:background="@android:color/white"
+        android:text="Box One"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/box_two"
+        android:layout_width="@dimen/standard_text_height_with"
+        android:layout_height="@dimen/standard_text_height_with"
+        android:layout_below="@id/box_one"
+        android:layout_marginEnd="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:background="@android:color/white"
+        android:text="Box Two"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/box_one" />
+
+    <TextView
+        android:id="@+id/box_three"
+        android:layout_width="250sp"
+        android:layout_height="305sp"
+        android:layout_below="@id/box_one"
+        android:layout_toRightOf="@id/box_two"
+        android:background="@android:color/white"
+        android:text="Box Three"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/box_four"
+        android:layout_width="@dimen/standard_text_height_with"
+        android:layout_height="@dimen/standard_text_height_with"
+        android:layout_below="@id/box_two"
+        android:background="@android:color/white"
+        android:text="Box Four"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/box_five"
+        android:layout_width="@dimen/standard_text_height_with"
+        android:layout_height="match_parent"
+        android:layout_below="@id/box_three"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:background="@android:color/white"
+        android:text="Box Five"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/box_six"
+        android:layout_width="@dimen/standard_text_height_with"
+        android:layout_height="@dimen/big_text_height"
+        android:layout_toRightOf="@id/box_five"
+        android:layout_below="@id/box_four"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:text="Box Six"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/box_seven"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_toRightOf="@id/box_six"
+        android:layout_below="@id/box_four"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:text="Box Seven"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/box_eight"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_toRightOf="@id/box_six"
+        android:layout_below="@id/box_seven"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:text="Box Eight"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/box_nine"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_toRightOf="@id/box_six"
+        android:layout_below="@id/box_eight"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:text="Box nine"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/box_ten"
+        android:layout_width="@dimen/xl_big_text_height_with"
+        android:layout_height="@dimen/xs_little_text_height"
+        android:layout_toRightOf="@id/box_five"
+        android:layout_below="@id/box_six"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:text="Box Ten"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/box_eleven"
+        android:layout_width="@dimen/xl_big_text_height_with"
+        android:layout_height="120sp"
+        android:layout_toRightOf="@id/box_five"
+        android:layout_below="@id/box_ten"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:text="Box Eleven"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
